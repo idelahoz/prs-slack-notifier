@@ -5,3 +5,4 @@ source 'https://rubygems.org'
 
 gem 'slack-notifier'
 gem "octokit", "~> 3.0"
+gem "dotenv"

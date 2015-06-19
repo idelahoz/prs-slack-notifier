@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
+    dotenv (2.0.2)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     multipart-post (2.0.0)
@@ -16,5 +17,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   octokit (~> 3.0)
   slack-notifier
