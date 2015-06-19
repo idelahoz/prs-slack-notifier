@@ -1,0 +1,7 @@
+- 
+  github_project: 'coderly/talking-code'
+  slack_channel: '#talking-code' 
+
+-
+  github_project: 'coderly/teamplaybook-api'
+  slack_channel: '#team-playbook' 
