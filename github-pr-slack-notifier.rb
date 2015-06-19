@@ -1,7 +1,7 @@
 require 'slack-notifier'
 require 'octokit'
 
-client = Octokit::Client.new(:login => 'idelahoz', :password => 'caramba01')
+client = Octokit::Client.new(:access_token => '6330706a946c0593d4efb1af08b92f642f47b870')
 
 issues = client.issues 'coderly/talking-code', :per_page => 100, labels: 'awaiting review'
 
