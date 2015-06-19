@@ -14,9 +14,7 @@ prs_list = pr_strings.join(" \n")
 notifier = Slack::Notifier.new "https://hooks.slack.com/services/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", channel: '#talking-code', username: 'notifier'
 
 if prs.any?
-  #notifier.ping "This PRs are marked as awaiting review: \n #{prs_list}"
-  puts "This PRs are marked as awaiting review: \n #{prs_list}"
+  notifier.ping "This PRs are marked as awaiting review: \n #{prs_list}"
 else
-  #notifier.ping "There are no PRs currently marked as awaiting review"
-  puts "There are no PRs currently marked as awaiting review"
+  notifier.ping "There are no PRs currently marked as awaiting review"
 end
